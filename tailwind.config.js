@@ -7,11 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        purpleLight: '#5E3DB3',
+        greyDark: '#E7E7E7',
+        greyLight: '#F5F4F9;',
+        greyTitle: '#C2C2C2',
+        purpleDark: '#090C35;',
       },
+      screens: {
+        lgDesktop: '2560px'
+      }
     },
   },
   plugins: [],
