@@ -72,7 +72,7 @@ export default function Home() {
   }
 
   return (
-    <main className={roboto.className +  ' main-wrapper'}>
+    <main className={roboto.className + ' main-wrapper'}>
       <section className="section-wrapper-football relative w-full py-4 md:pt-[81px] lg:pt-0 pt-0">
         <div className="striped-wrapper grid lg:grid-cols-[1fr_1fr] md:grid-cols-[40%_60%] grid-cols-1">
           <div className="hidden md:block"></div>
@@ -99,7 +99,7 @@ export default function Home() {
                   <div className="flex items-center gap-[10px]">
                     <div className="flex flex-col items-center text-center gap-[2px]">
                       <div className="text-[18px] leading-none">{m.no}</div>
-                      <div className={`undernumber w-[19px] h-[5px] rounded-lg ${m.no === '03' ? 'bg-white':'bg-purpleLight'}`}></div>
+                      <div className={`undernumber w-[19px] h-[5px] rounded-lg ${m.no === '03' ? 'bg-white' : 'bg-purpleLight'}`}></div>
                     </div>
                     <h2 className="text-[36px] text-greyTitle">{m.title}</h2>
                   </div>
@@ -112,13 +112,13 @@ export default function Home() {
           )
         }
         <div className="block md:hidden">
-        <Slider quotesList={football.qouteList}></Slider>
+          <Slider quotesList={football.qouteList}></Slider>
         </div>
       </section>
       <section className="section-wrapper-basketball relative w-full md:pt-[52px] pt-0">
         <div className="striped-wrapper max-w-screen-2xl mx-auto px-4 grid lg:grid-cols-[1fr_1fr] md:grid-cols-[40%_60%] grid-cols-1">
-            <h1 className="md:text-[90px] text-[50px] md:pl-0 pl-[18px] text-greyDark text-left grid">{basketball.title}</h1>
-            <div className="hidden md:block"></div>
+          <h1 className="md:text-[90px] text-[50px] md:pl-0 pl-[18px] text-greyDark text-left grid">{basketball.title}</h1>
+          <div className="hidden md:block"></div>
         </div>
         <div className="relative z-10 md:static">
           <picture className="block md:absolute -top-4 lg:left-[40%] lgDesktop:left-[52%] 
@@ -140,7 +140,7 @@ export default function Home() {
                   <div className="flex items-center gap-[10px]">
                     <div className="flex items-center flex-col text-center gap-[2px]">
                       <div className="text-[18px] leading-none">{m.no}</div>
-                      <div className={`undernumber w-[19px] h-[5px] rounded-lg ${m.no === '03' ? 'bg-white':'bg-purpleLight'}`}></div>
+                      <div className={`undernumber w-[19px] h-[5px] rounded-lg ${m.no === '03' ? 'bg-white' : 'bg-purpleLight'}`}></div>
                     </div>
                     <h2 className="text-[36px] text-greyTitle">{m.title}</h2>
                   </div>
