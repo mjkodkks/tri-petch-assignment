@@ -42,7 +42,7 @@ export function Slider({ quotesList }: IProps) {
                 )
             }
             {loaded && instanceRef.current && (
-                <div className="dots" style={{ marginTop: '-160px;' }}>
+                <div className="dots" style={{ marginTop: '-160px' }}>
                     {[0, 1, 2].map((idx) => {
                         return (
                             <button

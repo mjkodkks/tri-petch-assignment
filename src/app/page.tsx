@@ -31,7 +31,7 @@ export default function Home() {
     ],
     imageUrl: {
       mobile: '/sports/footballer_mobile.png',
-      tablet: '/sports/footballer_tablet.png',
+      tablet: '/sports/footballer_tablet_1.png',
       desktop: '/sports/footballer_desktop.png'
     }
   }
@@ -57,7 +57,7 @@ export default function Home() {
     ],
     imageUrl: {
       mobile: '/sports/basketball_mobile.png',
-      tablet: '/sports/basketball_tablet.png',
+      tablet: '/sports/basketball_tablet_1.png',
       desktop: '/sports/basketball_desktop.png'
     }
   }
@@ -72,7 +72,7 @@ export default function Home() {
   }
 
   return (
-    <main className={roboto.className + ' main-wrapper'}>
+    <main className={roboto.className + ' main-wrapper overflow-hidden'}>
       <section className="section-wrapper-football relative w-full py-4 md:pt-[81px] lg:pt-0 pt-0">
         <div className="striped-wrapper grid lg:grid-cols-[1fr_1fr] md:grid-cols-[40%_60%] grid-cols-1">
           <div className="hidden md:block"></div>
@@ -80,10 +80,10 @@ export default function Home() {
         </div>
         <div className="relative z-10 md:static">
           <picture className="block md:absolute top-8 lg:right-[60%] lgDesktop:right-[52%] 
-          md:pt-[81px] lg:pt-0 pt-0 md:ml-0 md:w-auto w-[219px] mx-auto transition-all duration-300">
+          md:pt-[81px] lg:pt-0 pt-0 md:-ml-[20%] md:w-auto w-[219px] mx-auto transition-all duration-300">
             <source media="(max-width: 767px)"
               srcSet={football.imageUrl.mobile} />
-            <source media="(max-width: 800px)"
+            <source media="(max-width: 1100px)"
               srcSet={football.imageUrl.tablet} />
             <img
               src={football.imageUrl.desktop} className="" alt="footballer" />
@@ -122,10 +122,10 @@ export default function Home() {
         </div>
         <div className="relative z-10 md:static">
           <picture className="block md:absolute -top-4 lg:left-[40%] lgDesktop:left-[52%] 
-          md:pt-[81px] md:right-0 lg:pt-0 pt-0 md:mr-0 md:w-auto w-[302px] mx-auto transition-all duration-300">
+          md:pt-[81px] md:right-0 lg:pt-0 pt-0 md:-mr-[32%] md:w-auto w-[302px] mx-auto transition-all duration-300">
             <source media="(max-width: 767px)"
               srcSet={basketball.imageUrl.mobile} />
-            <source media="(max-width: 800px)"
+            <source media="(max-width: 1100px)"
               srcSet={basketball.imageUrl.tablet} />
             <img
               src={basketball.imageUrl.desktop} className="" alt="footballer" />
