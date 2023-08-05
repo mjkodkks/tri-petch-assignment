@@ -30,7 +30,7 @@ export function Slider({ quotesList }: IProps) {
                             <div className="flex items-center gap-[10px]">
                                 <div className="flex flex-col items-center text-center gap-[2px]">
                                     <div className="text-[18px] leading-none">{m.no}</div>
-                                    <div className="undernumber w-[19px] h-[5px] rounded-lg"></div>
+                                    <div className="undernumber w-[19px] h-[5px] rounded-lg bg-purpleLight"></div>
                                 </div>
                                 <h2 className="text-[36px] text-greyTitle">{m.title}</h2>
                             </div>
