@@ -31,7 +31,7 @@ export default function Home() {
     ],
     imageUrl: {
       mobile: '/sports/footballer_mobile.png',
-      tablet: '/sports/footballer_tablet_1.png',
+      tablet: '/sports/footballer_tablet.png',
       desktop: '/sports/footballer_desktop.png'
     }
   }
@@ -57,7 +57,7 @@ export default function Home() {
     ],
     imageUrl: {
       mobile: '/sports/basketball_mobile.png',
-      tablet: '/sports/basketball_tablet_1.png',
+      tablet: '/sports/basketball_tablet.png',
       desktop: '/sports/basketball_desktop.png'
     }
   }
@@ -66,7 +66,7 @@ export default function Home() {
     const template = {
       '01': 'bg-white',
       '02': 'bg-greyLight',
-      '03': title === 'PLAYERS' ? 'bg-purpleDark text-white no3' : 'bg-purpleLight text-white no3',
+      '03': title === 'PLAYERS' ? 'bg-purpleDark' : 'bg-purpleLight',
     } as { [x: string]: string }
     return template[no] || ''
   }
@@ -98,12 +98,12 @@ export default function Home() {
                 <div>
                   <div className="flex items-center gap-[10px]">
                     <div className="flex flex-col items-center text-center gap-[2px]">
-                      <div className="text-[18px] leading-none">{m.no}</div>
+                      <div className={`text-[18px] leading-none ${m.no === '03' ? 'text-black':''}`}>{m.no}</div>
                       <div className={`undernumber w-[19px] h-[5px] rounded-lg ${m.no === '03' ? 'bg-white' : 'bg-purpleLight'}`}></div>
                     </div>
                     <h2 className="text-[36px] text-greyTitle">{m.title}</h2>
                   </div>
-                  <div className="mt-[20px] max-w-[712px] text-[20px]">
+                  <div className={`mt-[20px] max-w-[712px] text-[20px] ${m.no === '03' ? 'text-white':''}`}>
                     {m.description}
                   </div>
                 </div>
@@ -139,12 +139,12 @@ export default function Home() {
                 <div>
                   <div className="flex items-center gap-[10px]">
                     <div className="flex items-center flex-col text-center gap-[2px]">
-                      <div className="text-[18px] leading-none">{m.no}</div>
+                      <div className={`text-[18px] leading-none ${m.no === '03' ? 'text-purpleLight':''}`}>{m.no}</div>
                       <div className={`undernumber w-[19px] h-[5px] rounded-lg ${m.no === '03' ? 'bg-white' : 'bg-purpleLight'}`}></div>
                     </div>
                     <h2 className="text-[36px] text-greyTitle">{m.title}</h2>
                   </div>
-                  <div className="mt-[20px] max-w-[712px] text-[20px]">
+                  <div className={`mt-[20px] max-w-[712px] text-[20px] ${m.no === '03' ? 'text-white':''}`}>
                     {m.description}
                   </div>
                 </div>
